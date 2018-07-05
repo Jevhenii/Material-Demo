@@ -1,0 +1,30 @@
+<section [class]="setStyles.sectionBorder" [style.backgroundColor]="myColor">
+  <h1 [class]="myClass">
+    {{'Hello' + ' ' +  user.name}}
+  </h1>
+  <p [style.color]="'red'">Some style</p>
+  <p [style.width.px]="'400'">Some width</p>
+  <span [class]="setFonts.bigHeading">Dynamic classes</span>
+</section>
+
+<section [class]="setStyles.sectionBorder" [style.backgroundColor]="myColor">
+  <span [class]="setFonts.bigHeading">Events binding</span>
+  <p>Hello {{user.name}}</p>
+  <button (click)="changeColor('blue')">Click to change colors</button>
+</section>
+
+<section [class]="setStyles.sectionBorder"[style.backgroundColor]="myColor">
+  <span [class]="setFonts.bigHeading">More events binding</span>
+  <input type="text" #onColorChange>
+  <button (click)="changeColor(onColorChange.value)">Click to change colors</button>
+</section>
+
+<section [class]="setStyles.sectionBorder"[style.backgroundColor]="myColor">
+  <span [class]="setFonts.bigHeading">Components and directives</span>
+</section>
+
+
+<app-item>
+
+</app-item>
+

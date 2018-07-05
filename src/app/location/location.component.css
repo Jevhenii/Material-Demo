@@ -1,0 +1,36 @@
+.red {
+  color: #E73C7E;
+}
+
+.green {
+  color: green;
+}
+
+.blue {
+  color: blue;
+}
+p,span {
+  border:1px solid grey;
+}
+
+.sectionBorder {
+  border: 2px solid darkorchid;
+  margin:5px;
+}
+
+.mainParagraph {
+  font-family: 'Roboto', sans-serif;
+  line-height: inherit;
+  font-size: xx-small;
+  text-align: center;
+}
+
+.bigHeading {
+  font-family: Bahnschrift, serif;
+  line-height: revert;
+  font-size: x-large;
+  text-align: center;
+  display: block;
+  padding: 2em;
+
+}

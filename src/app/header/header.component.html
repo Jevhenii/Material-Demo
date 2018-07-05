@@ -1,0 +1,33 @@
+<div style="height: 90vh;">
+    <mat-toolbar color="primary">
+      <span class="example-spacer"></span>
+      <div fxShow="true" fxHide.lt-md="true" fxLayout="row-reverse" class="nav">
+          <div>
+              <a routerLink="/" mat-button class="hvr-float"><i class="material-icons">home</i> Home</a>
+              <a routerLink="/about" mat-button class="hvr-float"><i class="material-icons">info_outline</i> About</a>
+              <a routerLink="/post" mat-button class="hvr-float"><i class="material-icons">people</i> My Application</a>
+              <a routerLink="/location" mat-button class="hvr-float"><i class="material-icons">location_on</i> Location</a>
+            </div>
+            <div class="logo">
+              <a routerLink="/" style="text-decoration: none; color: white;">MyLogo</a>
+            </div>
+      </div>
+      <div fxShow="true" fxHide.gt-sm="true">
+        <a href="#" (click)="sidenav.toggle()"><i class="material-icons" style="color: rgba(255, 255, 255, 1);">reorder</i></a>
+      </div>
+    </mat-toolbar>
+    <mat-sidenav-container fxFlexFill class="example-container">
+      <mat-sidenav #sidenav fxLayout="column">
+        <div fxLayout="column" fxLayoutAlign="space-between start">
+          <a (click)="sidenav.toggle()" href="#" mat-button><i class="material-icons">close</i> Close</a>
+          <a routerLink="/" mat-button><i class="material-icons">home</i> Home</a>
+          <a routerLink="/about" mat-button><i class="material-icons">info_outline</i> About</a>
+          <a routerLink="/post" mat-button><i class="material-icons">people</i> My Application</a>
+          <a routerLink="/location" mat-button><i class="material-icons">location_on</i> Location</a>
+        </div>
+      </mat-sidenav>
+      <mat-sidenav-content fxFlexFill>
+        <router-outlet></router-outlet>
+      </mat-sidenav-content>
+    </mat-sidenav-container>
+  </div>

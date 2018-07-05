@@ -1,0 +1,10 @@
+@import url('../../../node_modules/hover.css/css/hover-min.css');
+div mat-toolbar .nav {
+  width: 100%;
+  justify-content: space-between;
+}
+div mat-toolbar {
+  background-color: rgba(0, 0, 0, 0.918);
+  color: white;
+}
+

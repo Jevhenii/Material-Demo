@@ -1,0 +1,107 @@
+ h1 {
+  color: white;
+  text-align: center;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  width:100px;
+  height: 100px;
+  background: palevioletred;
+  margin: 100px auto;
+  cursor: pointer;
+  border-radius:50px;
+  line-height:100px;
+}
+
+p {
+  color: palevioletred;
+  text-align: center;
+}
+.main {
+  background-color: oldlace;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+mat-form-field{
+  font-size: 1em;
+  width: 80%;
+  margin: 0 auto;
+}
+
+button{
+  background-color: lightgray;
+}
+
+mat-selection-list {
+  width: 80%;
+  margin: 0 auto;
+  display: -webkit-flex;
+  flex-direction: column;
+  justify-content: space-around;
+  border: 2px solid lightgrey;
+  -webkit-box-shadow: 0px 17px 44px 1px rgba(143,137,143,0.50);
+  -moz-box-shadow: 0px 17px 44px 1px rgba(143,137,143,0.50);
+  box-shadow: 0px 17px 44px 1px rgba(143,137,143,0.50);
+}
+mat-selection-list mat-list-option {
+  border: 1px solid lightgrey;
+  margin: 10px 0;
+}
+.btn {
+  display: -webkit-flex;
+  justify-content: space-between;
+}
+.btn_container {
+  display: flex;
+  margin: 0 10px;
+}
+.btn_container #delete button {
+  background-color: rgb(245, 101, 101);
+  color: wheat;
+}
+
+
+.ball {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: palevioletred;
+  cursor: pointer;
+  border-radius:25px;
+  line-height:50px;
+  text-align: center;
+  font-size: 14px;
+  color: wheat;
+  animation: bounce 2s;
+  animation-direction: alternate;
+  animation-timing-function: cubic-bezier(.5,0.05,1,.5);
+  animation-iteration-count: infinite;
+}
+
+@keyframes bounce {
+  from { transform: translate3d(0, 0px, 0);     }
+  to   { transform: translate3d(0, 320px, 0); }
+}
+h2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  text-align: center;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: palevioletred;
+}
+h2:before, h2:after {
+  background-color: palevioletred;
+  content: '\a0';
+  flex-grow: 1;
+  height: 2px;
+  position: relative;
+  top: 0.5em;
+}
+h2:before {
+  margin-right:10px;
+}
+h2:after {
+  margin-left:10px;
+}

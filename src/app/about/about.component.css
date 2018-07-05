@@ -1,0 +1,191 @@
+@import url(https://fonts.googleapis.com/css?family=Noto+Sans:400,700);
+@import url("../../../node_modules/hover.css/css/hover-min.css");
+* {
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-size-adjust: 100%;
+}
+
+h3 {
+  font-family: 'Noto Sans', serif;
+  font-size: 2em;
+  color: #333;
+}
+
+p {
+  font-family: 'Noto Sans', sans-serif;
+  font-size: 1.3em;
+  line-height: 1.5em;
+  color: #666;
+  margin: 30px 0;
+}
+
+.about-main {
+  background: #8e9eab;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #8e9eab, #eef2f3);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #8e9eab, #eef2f3);
+}
+
+.outer-box {
+  background: url("https://moduscreate.com/wp-content/uploads/2017/11/Angular-Elements-Your-ngComponents-everywhere.jpg") no-repeat fixed;
+  background-position: center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  min-height: 500px;
+  position: relative;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.outer-box .hero {
+  display: flex;
+  flex-direction: column;
+  color: wheat;
+  text-align: center;
+}
+
+.outer-box .hero h1 {
+  font-size: 50px;
+  background: -webkit-linear-gradient(#fff, #949191);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.outer-box .hero .hero_span {
+  color: #fffefe;
+  font-size: 19.99px;
+  font-style: italic;
+}
+
+.content {
+  margin: 0 auto;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  position: relative;
+  z-index: 2;
+  width: 80%;
+  padding-top: 200px;
+}
+
+.content .content_wrapper .content_wrapper__img {
+  width: 30%;
+  cursor: pointer;
+}
+
+.content .content_wrapper .content_wrapper__img img {
+  max-width: 100%;
+  height: auto;
+}
+
+.content .content_wrapper .content_wrapper__text {
+  width: 55%;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+}
+
+.content .content_wrapper .content_wrapper__text .content_wrapper_btn {
+  border-width: 1px;
+  border-color: #7d7a7c;
+  border-style: solid;
+  width: 193px;
+  height: 48px;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  align-self: center;
+  margin-top: 3em;
+  color: #7d7a7c;
+  font-size: 20px;
+  font-style: italic;
+}
+
+.content .content_wrapper .content_wrapper__text .content_wrapper_btn:hover {
+  background: transparent;
+  color: #bfe9fd;
+  box-shadow: inset 0 0 0 3px #3a7999;
+  transition-duration: 0.5s;
+}
+
+.content .content_wrapper .content_wrapper__text span {
+  color: #333131;
+  font-size: 17px;
+  font-weight: 700;
+}
+
+.content .content_wrapper .content_wrapper__text .content_wrapper__text__element {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  color: #665f60;
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.service {
+  margin: 0 auto;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  width: 80%;
+  padding-top: 100px;
+}
+
+.service .service_wrapper {
+  display: flex;
+}
+
+.service .service_wrapper__right {
+  width: 30%;
+  background-image: url("../../assets/unsplash_523ae1f5502d6_1.jpg");
+  background-position: center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.service .service_wrapper__right h3, .service .service_wrapper__right span {
+  color: white;
+}
+
+.service .service_wrapper__left {
+  width: 70%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.service .service_wrapper__left .service_wrapper___element {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  padding: 3em;
+  text-align: center;
+  width: 36.98888%;
+  cursor: pointer;
+}
+
+.service .service_wrapper__left .service_wrapper___element h4 {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color: #665f60;
+  font-size: 23.97px;
+  font-weight: 700;
+  transform: scaleY(1.0014);
+}
+
+.service .service_wrapper__left .service_wrapper___element span {
+  color: #665f60;
+  font-size: 14px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+/*# sourceMappingURL=about.component.css.map */

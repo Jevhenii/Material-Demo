@@ -1,0 +1,37 @@
+<div class="main">
+  <div class="ball" style="align-self: flex-start;">CRUD</div>
+  <div class="ball" style="align-self: flex-end;">CRUD</div>
+  <h1 [@myAwesomeAnimation]='state' (click)="animateMe()" id="animated-example" class="animated bounce" matTooltip="Press to toggle animation">Push</h1>
+  <h2 style="text-align: center;"><span>CRUD</span></h2>
+  <hr>
+  <mat-form-field>
+    <input
+      (keyup.enter)="createPost(title)" #title
+      matInput placeholder="Type here to write a new post">
+  </mat-form-field>
+  <mat-selection-list #post>
+    <mat-list-option *ngFor="let post of posts"
+    [@flyInOut]="'in'">
+      <div class="btn">
+        {{post.title}}
+        <div class="btn_container">
+          <div class="btn__button">
+            <button
+              (click)="updatePost(post)"
+              mat-raised-button><span matTooltip="It goes to console.log()">Update</span>
+            </button>
+          </div>
+          <div class="btn__button" id="delete">
+              <button
+                (click)="deletePost(post)"
+                mat-raised-button><i class="material-icons">delete_forever</i>
+              </button>
+          </div>
+        </div>
+      </div>
+    </mat-list-option>
+  </mat-selection-list>
+  <p>
+    Options selected: {{post.selectedOptions.selected.length}}
+  </p>
+</div>
